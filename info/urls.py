@@ -15,12 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from courier_cabinet import urls as cabinet_urls
-from desktop import urls as desktop_urls
+import info
+import courier_cabinet
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^courier/', include(cabinet_urls)),
-    url(r'^desktop/', include(desktop_urls))
-    # url(r'^info/', include(info.urls))
-]
+# urlpatterns = [
+#     url(r'^admin/', admin.site.urls),
+#     url(r'^courier/', include(courier_cabinet.urls)),
+#     url(r'^info/', include(info.urls))
+# ]
