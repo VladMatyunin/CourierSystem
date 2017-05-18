@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'courier_cabinet',
     'info',
-    'desktop'
+    'desktop',
+    'api',
+    'rest_framework'
 ]
+REST_FRAMEWORK={}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
