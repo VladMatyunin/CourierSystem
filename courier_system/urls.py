@@ -17,10 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from courier_cabinet import urls as cabinet_urls
 from desktop import urls as desktop_urls
+from api import urls as api_urls
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^courier/', include(cabinet_urls)),
-    url(r'^desktop/', include(desktop_urls))
+    url(r'^desktop/', include(desktop_urls)),
+    url(r'^api/', include(api_urls))
     # url(r'^info/', include(info.urls))
 ]
